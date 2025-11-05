@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme (6:00 - 18:00) */
+  --color-background: #F7F7F4;
+  --color-foreground: #1a1a1a;
+  --color-primary: #F44E00;
+  --color-secondary: #64748b;
+  --color-accent: #3b82f6;
+  --color-muted: #f1f5f9;
+  --color-border: #e2e8f0;
+}
+
+[data-theme="dark"] {
+  /* Dark theme (18:00 - 6:00) */
+  --color-background: #13120A;
+  --color-foreground: #969592;
+  --color-primary: #F44E00;
+  --color-secondary: #94a3b8;
+  --color-accent: #3b82f6;
+  --color-muted: #1e293b;
+  --color-border: #334155;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Minimalist link styling for HomeClient */
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
