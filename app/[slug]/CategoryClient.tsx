@@ -1,7 +1,9 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
+import HoverPreview from '@/components/HoverPreview'
 import { Category } from '@/lib/categories'
 import { Project } from '@/lib/projects'
 
@@ -11,6 +13,18 @@ type CategoryClientProps = {
 }
 
 export default function CategoryClient({ category, projects }: CategoryClientProps) {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [hoveredProject, setHoveredProject] = useState<string | null>(null)
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY })
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    return () => window.removeEventListener('mousemove', handleMouseMove)
+  }, [])
+
   return (
     <div className="min-h-screen bg-background">
       <div className="max-w-2xl mx-auto px-8 py-16 lg:py-24">
@@ -40,6 +54,8 @@ export default function CategoryClient({ category, projects }: CategoryClientPro
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline text-foreground hover:no-underline"
+                      onMouseEnter={() => setHoveredProject(project.slug)}
+                      onMouseLeave={() => setHoveredProject(null)}
                     >
                       {project.title}
                     </a>
@@ -47,6 +63,8 @@ export default function CategoryClient({ category, projects }: CategoryClientPro
                     <Link
                       href={`/projects/${project.slug}`}
                       className="underline text-foreground hover:no-underline"
+                      onMouseEnter={() => setHoveredProject(project.slug)}
+                      onMouseLeave={() => setHoveredProject(null)}
                     >
                       {project.title}
                     </Link>
@@ -58,6 +76,14 @@ export default function CategoryClient({ category, projects }: CategoryClientPro
             <p className="text-base leading-relaxed">
               No hay proyectos disponibles en esta categoría.
             </p>
+          )}
+          {hoveredProject && (
+            <HoverPreview
+              src="/preview/alan.png"
+              alt={projects.find(p => p.slug === hoveredProject)?.title || 'Project preview'}
+              isVisible={true}
+              mousePosition={mousePosition}
+            />
           )}
         </div>
       </div>
