@@ -23,8 +23,8 @@ export default function CategoryPreview({ projects, isVisible, mousePosition }: 
 
     // Estimar dimensiones basadas en el número de proyectos
     // Cards en formato portrait de 200x300px, apiladas horizontalmente con overlap
-    const cardWidth = 200
-    const cardHeight = 300
+    const cardWidth = 100
+    const cardHeight = 100
     const overlap = 40 // Cuánto se superponen las cards
     const totalWidth = cardWidth + (displayProjects.length - 1) * (cardWidth - overlap)
     const totalHeight = cardHeight
@@ -80,8 +80,8 @@ export default function CategoryPreview({ projects, isVisible, mousePosition }: 
           className="relative"
         >
           {displayProjects.map((project, index) => {
-            const cardWidth = 200
-            const cardHeight = 300
+            const cardWidth = 100
+            const cardHeight = 100
             const overlap = 40
             const offsetX = index * (cardWidth - overlap)
             // Rotación ligera para efecto de abanico (más rotación en los extremos)
@@ -118,7 +118,7 @@ export default function CategoryPreview({ projects, isVisible, mousePosition }: 
                 className="rounded-3xl overflow-hidden shadow-2xl bg-background border-2 border-white"
               >
                 <Image
-                  src="/preview/alan.png"
+                  src={project.image}
                   alt={project.title}
                   width={cardWidth}
                   height={cardHeight}

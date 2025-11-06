@@ -19,8 +19,8 @@ export default function HoverPreview({ src, alt, isVisible, mousePosition }: Hov
 
     // Usar dimensiones estimadas basadas en max-width y max-height
     // Las imágenes se ajustarán con object-contain manteniendo aspect ratio
-    const estimatedWidth = 400
-    const estimatedHeight = 600
+    const estimatedWidth = 100
+    const estimatedHeight = 500
     
     // Calcular posición adaptativa
     const viewportWidth = window.innerWidth
@@ -74,9 +74,9 @@ export default function HoverPreview({ src, alt, isVisible, mousePosition }: Hov
           <Image
             src={src}
             alt={alt}
-            width={400}
-            height={600}
-            className="w-auto h-auto max-w-[400px] max-h-[600px] object-contain"
+            width={200}
+            height={400}
+            className="w-auto h-auto max-w-[200px] max-h-[400px] object-contain"
             unoptimized
           />
         </motion.div>

@@ -49,7 +49,7 @@ export default function HomeClient() {
             />
           </div>
           <HoverPreview
-            src="/preview/alan.png"
+            src="/preview/main/me.png"
             alt="Andrés Paredes"
             isVisible={hoveredProfile}
             mousePosition={mousePosition}
@@ -172,7 +172,7 @@ export default function HomeClient() {
             </Link>.
           </p>
           <HoverPreview
-            src="/preview/resume.png"
+            src="/preview/main/resume.png"
             alt="Résumé"
             isVisible={hoveredResume}
             mousePosition={mousePosition}

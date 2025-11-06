@@ -29,6 +29,7 @@ export const projects: Project[] = [
     slug: 'best-gg',
     title: 'Best.GG',
     shortDescription: '',
+    image: '/public/preview/category/',
     url: 'https://www.behance.net/gallery/109561067/BESTGG',
     contexto: {
       problema: '',
@@ -173,6 +174,7 @@ export const projects: Project[] = [
     slug: 'demons-esports',
     title: 'Demons Esports',
     shortDescription: '',
+    image: '/preview/category/logos/demons-esports.webp',
     url: 'https://dribbble.com/shots/10885895-Demons-Esports-Team-Logo',
     contexto: {
       problema: '',
@@ -197,6 +199,7 @@ export const projects: Project[] = [
     slug: 'datagamer',
     title: 'Datagamer',
     shortDescription: '',
+    image: '/preview/category/logos/datagamer.webp',
     url: 'https://dribbble.com/shots/14785876-Datagamer-Logo',
     contexto: {
       problema: '',
@@ -221,6 +224,7 @@ export const projects: Project[] = [
     slug: 'cattleya-gaming',
     title: 'Cattleya Gaming',
     shortDescription: '',
+    image: '/preview/category/logos/cattleya.webp',
     url: 'https://www.instagram.com/somoscattleya/',
     contexto: {
       problema: '',
@@ -245,6 +249,7 @@ export const projects: Project[] = [
     slug: 'rexomg',
     title: 'Rex OMG',
     shortDescription: '',
+    image: '/preview/category/logos/rexomg.webp',
     url: 'https://www.facebook.com/rexomg',
     contexto: {
       problema: '',
@@ -269,6 +274,7 @@ export const projects: Project[] = [
     slug: 'rehelp',
     title: 'Rehelp',
     shortDescription: '',
+    image: '/preview/category/logos/rehelp.webp',
     url: 'https://dribbble.com/shots/9855461-Rehelp-Logo',
     contexto: {
       problema: '',
@@ -293,6 +299,7 @@ export const projects: Project[] = [
     slug: 'andres-paredes',
     title: 'Andres Paredes',
     shortDescription: '',
+    image: '/preview/category/logos',
     url: '',
     contexto: {
       problema: '',
@@ -317,6 +324,7 @@ export const projects: Project[] = [
     slug: 'vallest',
     title: 'Vallest rap',
     shortDescription: '',
+    image: '/preview/category/illustrations/vallest.webp',
     url: 'https://dribbble.com/shots/9081125-Valles-T-Rap',
     contexto: {
       problema: '',
@@ -341,6 +349,7 @@ export const projects: Project[] = [
     slug: 'me',
     title: 'Me',
     shortDescription: '',
+    image: '/preview/category/illustrations/me.webp',
     url: 'https://dribbble.com/shots/9730220-Me-Character-Design',
     contexto: {
       problema: '',
@@ -365,6 +374,7 @@ export const projects: Project[] = [
     slug: 'papa-emeritus-ii',
     title: 'Papa Emeritus II',
     shortDescription: '',
+    image: '/preview/category/illustrations/papa-emeritus-ii.webp',
     url: 'https://dribbble.com/shots/9837898-Papa-Emeritus-II',
     contexto: {
       problema: '',
@@ -389,6 +399,7 @@ export const projects: Project[] = [
     slug: 'demons',
     title: 'Demons',
     shortDescription: '',
+    image: '/preview/category/esports-team-branding/demons.webp',
     url: 'https://www.instagram.com/demonsgg/',
     contexto: {
       problema: '',
@@ -413,6 +424,7 @@ export const projects: Project[] = [
     slug: 'coffee-beans-clan',
     title: 'Coffee Beans Clan',
     shortDescription: '',
+    image: '/preview/category/esports-team-branding/coffee-beans-clan.webp',
     url: 'https://www.instagram.com/coffeebeansclan/',
     contexto: {
       problema: '',
