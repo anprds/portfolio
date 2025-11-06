@@ -2,7 +2,7 @@ export type Project = {
   slug: string
   title: string
   shortDescription: string
-  image?: string
+  image: string
   url?: string
   contexto: {
     problema: string
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     slug: 'best-gg',
     title: 'Best.GG',
     shortDescription: '',
-    image: '/public/preview/category/',
+    image: '/preview/category/',
     url: 'https://www.behance.net/gallery/109561067/BESTGG',
     contexto: {
       problema: '',
@@ -54,6 +54,7 @@ export const projects: Project[] = [
     slug: 'game-master',
     title: 'Game Master',
     shortDescription: '',
+    image: '/preview/category/',
     url: 'https://www.behance.net/gallery/66078391/Game-Master',
     contexto: {
       problema: '',
@@ -78,6 +79,7 @@ export const projects: Project[] = [
     slug: 'paperhive',
     title: 'Paperhive',
     shortDescription: '',
+    image: '',
     url: 'https://www.behance.net/gallery/66225303/Paperhive',
     contexto: {
       problema: '',
@@ -102,6 +104,7 @@ export const projects: Project[] = [
     slug: 'gamer-u',
     title: 'Gamer U',
     shortDescription: '',
+    image: '',
     url: 'https://www.behance.net/gallery/109346889/GamerU',
     contexto: {
       problema: '',
@@ -126,6 +129,7 @@ export const projects: Project[] = [
     slug: 'tasking',
     title: 'Tasking',
     shortDescription: '',
+    image: '',
     url: 'https://www.behance.net/gallery/73001325/Tasking',
     contexto: {
       problema: '',
@@ -150,6 +154,7 @@ export const projects: Project[] = [
     slug: 'banco-de-bogota',
     title: 'Banco de Bogotá',
     shortDescription: '',
+    image: '',
     url: 'https://www.behance.net/gallery/64303909/Bank-UI-UX-%28Banco-de-Bogota%29',
     contexto: {
       problema: '',
