@@ -29,7 +29,7 @@ export const projects: Project[] = [
     slug: 'best-gg',
     title: 'Best.GG',
     shortDescription: '',
-    image: '/preview/category/',
+    image: '/preview/category/user-experience-design/bestgg.webp',
     url: 'https://www.behance.net/gallery/109561067/BESTGG',
     contexto: {
       problema: '',
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     slug: 'game-master',
     title: 'Game Master',
     shortDescription: '',
-    image: '/preview/category/',
+    image: '/preview/category/user-experience-design/game-master.webp',
     url: 'https://www.behance.net/gallery/66078391/Game-Master',
     contexto: {
       problema: '',
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     slug: 'paperhive',
     title: 'Paperhive',
     shortDescription: '',
-    image: '',
+    image: '/preview/category/user-experience-design/paperhive.webp',
     url: 'https://www.behance.net/gallery/66225303/Paperhive',
     contexto: {
       problema: '',
@@ -104,7 +104,7 @@ export const projects: Project[] = [
     slug: 'gamer-u',
     title: 'Gamer U',
     shortDescription: '',
-    image: '',
+    image: '/preview/category/user-experience-design/gameru.webp',
     url: 'https://www.behance.net/gallery/109346889/GamerU',
     contexto: {
       problema: '',
@@ -129,7 +129,7 @@ export const projects: Project[] = [
     slug: 'tasking',
     title: 'Tasking',
     shortDescription: '',
-    image: '',
+    image: '/preview/category/user-experience-design/tasking.webp',
     url: 'https://www.behance.net/gallery/73001325/Tasking',
     contexto: {
       problema: '',
@@ -154,7 +154,7 @@ export const projects: Project[] = [
     slug: 'banco-de-bogota',
     title: 'Banco de Bogotá',
     shortDescription: '',
-    image: '',
+    image: '/preview/category/user-experience-design/BancoBogota.webp',
     url: 'https://www.behance.net/gallery/64303909/Bank-UI-UX-%28Banco-de-Bogota%29',
     contexto: {
       problema: '',
@@ -304,8 +304,8 @@ export const projects: Project[] = [
     slug: 'andres-paredes',
     title: 'Andres Paredes',
     shortDescription: '',
-    image: '/preview/category/logos',
-    url: '',
+    image: '/preview/category/logos/andresparedes.webp',
+    url: 'https://dribbble.com/shots/26754172-Andr-s-Paredes-Logo',
     contexto: {
       problema: '',
       objetivos: []

@@ -79,7 +79,7 @@ export default function CategoryClient({ category, projects }: CategoryClientPro
           )}
           {hoveredProject && (
             <HoverPreview
-              src="/preview/alan.png"
+              src={projects.find(p => p.slug === hoveredProject)?.image || ''}
               alt={projects.find(p => p.slug === hoveredProject)?.title || 'Project preview'}
               isVisible={true}
               mousePosition={mousePosition}
