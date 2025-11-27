@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   description: 'Portafolio personal moderno y responsivo',
   keywords: ['portafolio', 'diseño', 'desarrollo', 'web', 'Next.js', 'React', 'TypeScript'],
-  authors: [{ name: 'Tu Nombre' }],
-  creator: 'Tu Nombre',
+  authors: [{ name: 'Andrés Paredes' }],
+  creator: 'Andrés Paredes',
   openGraph: {
     title: 'Portafolio Personal',
     description: 'Portafolio personal moderno y responsivo',
