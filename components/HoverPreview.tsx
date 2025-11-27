@@ -19,26 +19,28 @@ export default function HoverPreview({ src, alt, isVisible, mousePosition }: Hov
 
     // Usar dimensiones estimadas basadas en max-width y max-height
     // Las imágenes se ajustarán con object-contain manteniendo aspect ratio
-    const estimatedWidth = 100
-    const estimatedHeight = 500
+    const estimatedWidth = 200
+    const estimatedHeight = 300
     
     // Calcular posición adaptativa
     const viewportWidth = window.innerWidth
     const viewportHeight = window.innerHeight
     const offsetX = 20 // Offset desde el cursor
-    const offsetY = -estimatedHeight / 2 // Centrar verticalmente
+    const offsetY = 10
 
     let x = mousePosition.x + offsetX
     let y = mousePosition.y + offsetY
+    // Verificar si hay espacio suficiente abajo del cursor
+    const hasSpaceBelow = mousePosition.y + offsetY + estimatedHeight <= viewportHeight
+
+    if (!hasSpaceBelow) {
+      // Si no hay espacio abajo, posicionar arriba del cursor
+      y = mousePosition.y - estimatedHeight - offsetY
+    }
 
     // Ajustar si se sale por la derecha
     if (x + estimatedWidth > viewportWidth) {
       x = mousePosition.x - estimatedWidth - offsetX
-    }
-
-    // Ajustar si se sale por abajo
-    if (y + estimatedHeight > viewportHeight) {
-      y = viewportHeight - estimatedHeight - 10
     }
 
     // Ajustar si se sale por arriba
@@ -75,7 +77,7 @@ export default function HoverPreview({ src, alt, isVisible, mousePosition }: Hov
             src={src}
             alt={alt}
             width={200}
-            height={400}
+            height={300}
             className="w-auto h-auto max-w-[200px] max-h-[400px] object-contain"
             unoptimized
           />
