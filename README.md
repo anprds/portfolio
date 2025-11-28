@@ -4,12 +4,12 @@ Un portafolio personal moderno y responsivo construido con Next.js, React, TypeS
 
 ## Características
 
-- 🎨 **Diseño Moderno**: Interfaz limpia y minimalista inspirada en los mejores portafolios
-- 🌓 **Tema Automático**: Cambio automático de tema según la hora del día (oscuro por la noche, claro durante el día)
-- 📱 **Responsive**: Diseño completamente adaptable a todos los dispositivos
-- ⚡ **Animaciones Suaves**: Transiciones fluidas con Framer Motion
-- 🎯 **SEO Optimizado**: Meta tags y estructura semántica para mejor indexación
-- ♿ **Accesible**: Cumple con estándares de accesibilidad web
+- **Diseño Moderno**: Interfaz limpia y minimalista inspirada en los mejores portafolios
+- **Tema Automático**: Cambio automático de tema según la hora del día (oscuro por la noche, claro durante el día)
+- **Responsive**: Diseño completamente adaptable a todos los dispositivos
+- **Animaciones Suaves**: Transiciones fluidas con Framer Motion
+- **SEO Optimizado**: Meta tags y estructura semántica para mejor indexación
+- **Accesible**: Cumple con estándares de accesibilidad web
 
 ## Stack Tecnológico
 
