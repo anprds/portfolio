@@ -1,6 +1,6 @@
 # Portafolio Personal
 
-Un portafolio personal moderno y responsivo construido con Next.js, React, TypeScript, Tailwind CSS y Framer Motion.
+Un portafolio personal moderno y responsivo construido con Next.js, React, TypeScript, Tailwind CSS y Framer Motion. Cabe aclarar que fue hecho en Cursor.
 
 ## Características
 
