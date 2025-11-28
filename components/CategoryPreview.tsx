@@ -115,7 +115,7 @@ export default function CategoryPreview({ projects, isVisible, mousePosition }: 
                   width: `${cardWidth}px`,
                   height: `${cardHeight}px`,
                 }}
-                className="rounded-3xl overflow-hidden shadow-2xl bg-background border-2 border-white"
+                className="rounded-lg overflow-hidden shadow-2xl bg-background border border-border"
               >
                 <Image
                   src={project.image}
